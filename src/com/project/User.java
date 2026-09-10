@@ -12,7 +12,7 @@ public class User {
 	}
 	
 	public void borrowBook(Book book) {
-		if(borrowedCount == borrowedBooks.length) {
+		if(borrowedCount >= borrowedBooks.length) {
 			System.out.println("Borrowed limit reached");
 			return;
 		}
